@@ -8,7 +8,7 @@ const Download = () => {
   return (
     <section
       id="download"
-      className="flex w-full max-w-full flex-col items-center justify-center px-5 py-16"
+      className="flex w-full max-w-full flex-col items-center justify-center px-5 pt-16"
     >
       <m.div
         ref={ref}

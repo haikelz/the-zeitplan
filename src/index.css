@@ -1,0 +1,44 @@
+@import url("https://fonts.googleapis.com/css2?family=Patua+One&family=IBM+Plex+Mono:wght@600&family=Poppins:wght@400;500;600;700&family=Source+Sans+Pro:wght@400;600;700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    scroll-behavior: smooth;
+  }
+
+  button {
+    @apply outline-none;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    @apply font-patua text-dark;
+  }
+
+  h1 {
+    @apply text-4xl leading-snug;
+  }
+
+  h2 {
+    @apply text-3xl leading-snug;
+  }
+
+  h3 {
+    @apply text-2xl leading-snug;
+  }
+
+  h4 {
+    @apply text-xl leading-snug;
+  }
+}
+
+@layer components {
+  .btn-hover {
+    @apply transition-all ease-in-out;
+  }
+}

@@ -18,11 +18,11 @@ const Alasan = () => {
         >
           <div className="flex flex-col lg:w-[22rem]">
             <h2>Kenapa Kamu Sangat Harus Pakai Aplikasi Yang Keren Ini?</h2>
-            <p className="mt-5 text-dark/60">
+            <p className="mt-5 font-sanspro text-dark/60">
               Sejujurnya aplikasi kita ini seringkali bermasalah. Kadang-kadang gak bisa submit
               data, kadang dibukanya lambat, kadang tiba-tiba logout sendiri, untung gak berdua.
             </p>
-            <div className="mt-10 flex gap-5 md:justify-start">
+            <div className="mt-10 flex gap-5 font-inter tracking-wide md:justify-start">
               <div>
                 <p className="uppercase text-[#0C1B4D]/60">Total Don&#39;tloud</p>
                 <p className="text-xl font-semibold">1,501,234</p>

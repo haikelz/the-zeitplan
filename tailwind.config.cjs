@@ -10,6 +10,7 @@ module.exports = {
         patua: "Patua One",
         ibm: "IBM Plex Mono",
         poppins: "Poppins",
+        inter: "Inter",
       },
       colors: {
         primary: "#FE5E44",

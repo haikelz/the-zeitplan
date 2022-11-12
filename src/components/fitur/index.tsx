@@ -11,7 +11,7 @@ const Fitur = () => {
       id="fitur"
       className="flex w-full max-w-full items-center justify-center px-5 py-16 font-sanspro"
     >
-      <div className="flex flex-col items-center justify-center gap-10 md:w-xl md:flex-row md:justify-between">
+      <div className="flex flex-col items-center justify-center space-y-10 md:w-xl md:flex-row md:justify-between md:space-y-0 md:space-x-10">
         <div className="h-full max-h-full w-full max-w-full">
           <img className="h-full w-full" src="/img/fitur.svg" alt="Fitur" />
         </div>
@@ -28,7 +28,7 @@ const Fitur = () => {
           </div>
           <div className="grid grid-cols-1 grid-rows-2 gap-6 sm:grid-cols-2">
             {features.map((item, index) => (
-              <div key={index + 1} className="">
+              <div key={index + 1}>
                 <img src={item.icon} alt="Features" />
                 <h4 className="my-2">{item.feature}</h4>
                 <p className="text-dark/60">{item.desc}</p>

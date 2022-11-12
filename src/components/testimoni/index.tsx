@@ -50,16 +50,16 @@ const Testimoni = () => {
                 key={index + 1}
                 className="row-span-6 flex h-fit cursor-pointer flex-col justify-center rounded-md bg-white p-6 transition-all ease-in-out hover:scale-105"
               >
-                <div className="flex gap-1">
+                <div className="flex space-x-1">
                   {newStar.map((star, index) => (
-                    <img key={index + 1} src="/img/star.svg" alt="Star" />
+                    <img key={index + 1} src="/img/star.svg" alt="star" />
                   ))}
                   {newUnstar.map((unstar, index) => (
-                    <img key={index + 1} src="/img/unstar.svg" alt="Unstar" />
+                    <img key={index + 1} src="/img/unstar.svg" alt="unstar" />
                   ))}
                 </div>
                 <p className="my-5">{item.desc}</p>
-                <div className="flex gap-4">
+                <div className="flex space-x-4">
                   <img
                     src={`/img/review-user-${item.userImage}.svg`}
                     alt={`User Review ${item.userImage}`}

@@ -52,7 +52,7 @@ const Harga = () => {
               <p className="mt-1 text-[#0C0E2B]/60">{item.desc}</p>
               <ul className="mt-5 mb-8">
                 {item.listFeatures.map((feature, index) => (
-                  <li key={index + 1} className="my-2 flex items-center gap-4">
+                  <li key={index + 1} className="my-2 flex items-center space-x-4">
                     <img className="h-[20px] w-[20px]" src="/img/check.svg" alt="check icon" />
                     <p>{feature}</p>
                   </li>

@@ -22,8 +22,8 @@ const Download = () => {
           Please download lah aplikasi ini, udah susah-susah buat, mana pas bikin sampe begadang,
           terus juga ditambah weekend. Jadi, please download lah ya.
         </p>
-        <div className="flex gap-4">
-          <button>
+        <div className="flex">
+          <button className="mr-4">
             <img src="/img/app-store.svg" alt="App Store" />
           </button>
           <button>

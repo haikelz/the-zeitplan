@@ -49,9 +49,9 @@ const Navbar = () => {
                 <a href="#download">
                   <button
                     onClick={() => setActiveLink("#download")}
-                    className="btn-hover flex items-center justify-center gap-2 rounded-[0.250rem] bg-primary px-4 py-1 text-white drop-shadow-lg hover:bg-orange-600"
+                    className="btn-hover flex items-center justify-center rounded-[0.250rem] bg-primary px-4 py-1 text-white drop-shadow-lg hover:bg-orange-600"
                   >
-                    Download
+                    <p className="mr-2">Download</p>
                     <svg
                       width="14"
                       height="12"
@@ -110,7 +110,7 @@ const Navbar = () => {
         </div>
         {isOpen ? (
           <div className="mt-4 md:hidden">
-            <ul className="flex flex-col items-start justify-center gap-4 font-sanspro text-lg font-semibold text-black/50">
+            <ul className="flex flex-col items-start justify-center space-y-4 font-sanspro text-lg font-semibold text-black/50">
               <li>
                 <button
                   onClick={() => backToTop(0)}
@@ -134,9 +134,9 @@ const Navbar = () => {
                 <a href="#download">
                   <button
                     onClick={() => setActiveLink("#download")}
-                    className="flex items-center justify-center gap-2 rounded-[0.250rem] bg-primary px-4 py-1 text-white"
+                    className="flex items-center justify-center rounded-[0.250rem] bg-primary px-4 py-1 text-white"
                   >
-                    Download
+                    <p className="mr-2">Download</p>
                     <svg
                       width="14"
                       height="12"

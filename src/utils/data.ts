@@ -168,3 +168,14 @@ export const navList = [
   { name: "Harga", href: "#harga" },
   { name: "Testimoni", href: "#testimoni" },
 ];
+
+export const sosmedList = [
+  {
+    name: "Instagram",
+    href: "https://instagram.com",
+    imgSrc: "/img/instagram.svg",
+    alt: "Instagram",
+  },
+  { name: "Facebook", href: "https://facebook.com", imgSrc: "/img/facebook.svg", alt: "Facebook" },
+  { name: "Instagram", href: "https://twitter.com", imgSrc: "/img/twitter.svg", alt: "Twitter" },
+];

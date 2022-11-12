@@ -12,8 +12,8 @@ const Banner = () => {
               jadwal itu sangatlah tidak keren. Aplikasi ini adalah sahabat kamu sekarang, brodie~
             </p>
           </div>
-          <div className="mb-10 flex flex-col gap-3 font-sanspro font-semibold lg:flex-row">
-            <button className="btn-hover rounded-md bg-primary py-3 text-white hover:bg-orange-600 md:px-14">
+          <div className="mb-10 flex flex-col font-sanspro font-semibold lg:flex-row">
+            <button className="btn-hover mb-3 rounded-md bg-primary py-3 text-white hover:bg-orange-600 md:px-14 lg:mr-3 lg:mb-0">
               Learn More
             </button>
             <button className="btn-hover rounded-md border border-primary/20 bg-primary/10 py-3 text-primary hover:bg-primary/20 md:px-14">

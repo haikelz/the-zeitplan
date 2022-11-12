@@ -1,7 +1,7 @@
 import { m } from "framer-motion";
 import { useVisible } from "../../hooks/useVisible";
 import { toLeft } from "../../utils/animation";
-import { linkList } from "../../utils/data";
+import { linkList, sosmedList } from "../../utils/data";
 
 const Footer = () => {
   const [ref, controls] = useVisible();
@@ -13,11 +13,11 @@ const Footer = () => {
         initial="hidden"
         animate={controls}
         variants={toLeft}
-        className="flex flex-col items-start justify-center border-t pt-16 md:w-xl md:flex-row md:items-start md:justify-between md:space-x-20"
+        className="flex flex-col items-start justify-between border-t pt-16 md:w-xl md:flex-row md:items-start md:justify-between md:space-x-20"
       >
         <div className="flex flex-col items-start justify-center font-sanspro text-dark/60 md:block md:w-[38%]">
-          <div className="flex items-center justify-center gap-3 md:justify-start">
-            <img src="/img/logo.svg" alt="Zeitplan" />
+          <div className="flex items-center justify-center space-x-3 md:justify-start">
+            <img src="/img/logo.svg" alt="zeitplan" />
             <h4 className="my-5">Zeitplan</h4>
           </div>
           <div>
@@ -44,26 +44,18 @@ const Footer = () => {
           ))}
         </div>
         <div>
-          <h4>Tetap Terhubung</h4>
+          <h4 className="mt-2 md:mt-0">Tetap Terhubung</h4>
           <p className="my-2 w-[90%] font-sanspro text-dark/60">
             Lihat kami pansos di sosial media berikut:
           </p>
-          <div className="flex gap-3">
-            <a href="https://instagram.com">
-              <div className="flex items-center justify-center rounded-full bg-primary/5 p-3  ">
-                <img src="/img/instagram.svg" alt="Instagram" />
-              </div>
-            </a>
-            <a href="https://facebook.com">
-              <div className="flex items-center justify-center rounded-full bg-primary/5 p-3  ">
-                <img src="/img/facebook.svg" alt="Facebook" />
-              </div>
-            </a>
-            <a href="https://twitter.com">
-              <div className="flex items-center justify-center rounded-full bg-primary/5 p-3  ">
-                <img src="/img/twitter.svg" alt="Twitter" />
-              </div>
-            </a>
+          <div className="flex space-x-3">
+            {sosmedList.map((sosmed, index) => (
+              <a key={index + 1} href={sosmed.href}>
+                <div className="flex items-center justify-center rounded-full bg-primary/5 p-3  ">
+                  <img src={sosmed.imgSrc} alt={sosmed.alt} />
+                </div>
+              </a>
+            ))}
           </div>
         </div>
       </m.div>
